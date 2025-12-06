@@ -21,10 +21,14 @@
   <body>
     <div class="container">
       <header class="header u-dark-bg">
-        <form class="header__form">
-          <input class="header__color-picker" type="color" />
+        <form class="header__form" id="color-scheme-generator-form">
+          <input
+            class="header__color-picker"
+            type="color"
+            name="color-picker"
+          />
           <div class="header__scheme-selector-wrapper">
-            <select class="header__scheme-selector">
+            <select class="header__scheme-selector" name="scheme-selector">
               <option class="header__scheme-selector-option" value="monochrome">
                 Monochrome
               </option>
@@ -63,30 +67,10 @@
 
       <main>
         <section class="color-schemes u-dark-bg">
-          <ul class="color-schemes__list" id="color-schemes-list">
-            <li class="color-schemes__item">
-              <div class="color-schemes__color-box"></div>
-              <span class="color-schemes__color-code">#F55A5A</span>
-            </li>
-            <li class="color-schemes__item">
-              <div class="color-schemes__color-box"></div>
-              <span class="color-schemes__color-code">#F55A5A</span>
-            </li>
-            <li class="color-schemes__item">
-              <div class="color-schemes__color-box"></div>
-              <span class="color-schemes__color-code">#F55A5A</span>
-            </li>
-            <li class="color-schemes__item">
-              <div class="color-schemes__color-box"></div>
-              <span class="color-schemes__color-code">#F55A5A</span>
-            </li>
-            <li class="color-schemes__item">
-              <div class="color-schemes__color-box"></div>
-              <span class="color-schemes__color-code">#F55A5A</span>
-            </li>
-          </ul>
+          <ul class="color-schemes__list" id="color-schemes-list"></ul>
         </section>
       </main>
     </div>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
