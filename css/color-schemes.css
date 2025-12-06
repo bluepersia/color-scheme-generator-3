@@ -1,0 +1,22 @@
+.color-schemes__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+
+.color-schemes__item {
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+.color-schemes__color-box {
+  background-color: aqua;
+  height: 17rem;
+}
+
+.color-schemes__color-code {
+  padding: 0.68rem 0;
+  display: block;
+  color: var(--light);
+  text-align: center;
+}
