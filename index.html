@@ -4,33 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Scheme Generator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;50&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/color-schemes.css" />
+    <!-- Favicon -->
   </head>
   <body>
-    <header class="header">
-      <form class="header__form">
-        <input class="header__color-picker" type="color" />
-        <select class="header__scheme-selector">
-          <option value="monochrome">Monochrome</option>
-          <option value="monochrome-dark">Monochrome Dark</option>
-          <option value="monochrome-light">Monochrome Light</option>
-          <option value="analogic">Analogic</option>
-          <option value="complement">Complement</option>
-          <option value="analogic-complement">Analogic Complement</option>
-          <option value="triad">Triad</option>
-        </select>
-        <button class="header__get-scheme-button">Get color scheme</button>
-      </form>
-    </header>
+    <div class="container">
+      <header class="header u-dark-bg">
+        <form class="header__form">
+          <input class="header__color-picker" type="color" />
+          <div class="header__scheme-selector-wrapper">
+            <select class="header__scheme-selector">
+              <option class="header__scheme-selector-option" value="monochrome">
+                Monochrome
+              </option>
+              <option
+                class="header__scheme-selector-option"
+                value="monochrome-dark"
+              >
+                Monochrome Dark
+              </option>
+              <option
+                class="header__scheme-selector-option"
+                value="monochrome-light"
+              >
+                Monochrome Light
+              </option>
+              <option class="header__scheme-selector-option" value="analogic">
+                Analogic
+              </option>
+              <option class="header__scheme-selector-option" value="complement">
+                Complement
+              </option>
+              <option
+                class="header__scheme-selector-option"
+                value="analogic-complement"
+              >
+                Analogic Complement
+              </option>
+              <option class="header__scheme-selector-option" value="triad">
+                Triad
+              </option>
+            </select>
+          </div>
+          <button class="header__get-scheme-button">Get color scheme</button>
+        </form>
+      </header>
 
-    <main>
-      <section class="color-schemes">
-        <ul class="color-schemes__list">
-          <li class="color-schemes__item">
-            <div class="color-schemes__color-box"></div>
-            <span class="color-schemes__color-code"></span>
-          </li>
-        </ul>
-      </section>
-    </main>
+      <main>
+        <section class="color-schemes u-dark-bg">
+          <ul class="color-schemes__list" id="color-schemes-list">
+            <li class="color-schemes__item">
+              <div class="color-schemes__color-box"></div>
+              <span class="color-schemes__color-code">#F55A5A</span>
+            </li>
+            <li class="color-schemes__item">
+              <div class="color-schemes__color-box"></div>
+              <span class="color-schemes__color-code">#F55A5A</span>
+            </li>
+            <li class="color-schemes__item">
+              <div class="color-schemes__color-box"></div>
+              <span class="color-schemes__color-code">#F55A5A</span>
+            </li>
+            <li class="color-schemes__item">
+              <div class="color-schemes__color-box"></div>
+              <span class="color-schemes__color-code">#F55A5A</span>
+            </li>
+            <li class="color-schemes__item">
+              <div class="color-schemes__color-box"></div>
+              <span class="color-schemes__color-code">#F55A5A</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
